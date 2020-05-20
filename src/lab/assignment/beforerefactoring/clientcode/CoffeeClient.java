@@ -1,6 +1,6 @@
 package lab.assignment.beforerefactoring.clientcode;
 
-import lab.assignment.beforerefactoring.CoffeeMaker;
+import lab.assignment.beforerefactoring.CoffeeMakerTemplate;
 
 import lab.assignment.beforerefactoring.MochaMaker;
 
@@ -12,17 +12,17 @@ public class CoffeeClient {
 
 
     public static void main(String[] args) {
-        MochaMaker mocha = new MochaMaker();
+        CoffeeMakerTemplate mocha = new MochaMaker();
         mocha.makeCoffee();
 
         System.out.println("********************");
 
-        CappucinoMaker cappucino = new CappucinoMaker();
+        CoffeeMakerTemplate cappucino = new CappucinoMaker();
         cappucino.makeCoffee();
 
         System.out.println("********************");
 
-        AmericanoMaker americano = new AmericanoMaker();
+        CoffeeMakerTemplate americano = new AmericanoMaker();
         americano.makeCoffee();
     }
 

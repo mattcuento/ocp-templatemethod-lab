@@ -1,6 +1,6 @@
 package lab.assignment.afterrefactoring;
 
-public class MochaMaker extends CoffeeMaker {
+public class MochaMaker extends CoffeeMakerTemplate {
 
     protected void addIngredients() {
         System.out.println("Adding cocoa powder");

@@ -1,6 +1,6 @@
 package lab.assignment.afterrefactoring.clientcode;
 
-import lab.assignment.afterrefactoring.CoffeeMaker;
+import lab.assignment.afterrefactoring.CoffeeMakerTemplate;
 
 import lab.assignment.afterrefactoring.MochaMaker;
 
@@ -12,18 +12,18 @@ public class CoffeeClient {
 
 
     public static void main(String[] args) {
-        MochaMaker mocha = new MochaMaker();
-        mocha.makeCoffee();
+        CoffeeMakerTemplate coffee = new MochaMaker();
+        coffee.makeCoffee();
 
         System.out.println("********************");
 
-        CappucinoMaker cappucino = new CappucinoMaker();
-        cappucino.makeCoffee();
+        coffee = new CappucinoMaker();
+        coffee.makeCoffee();
 
         System.out.println("********************");
 
-        AmericanoMaker americano = new AmericanoMaker();
-        americano.makeCoffee();
+        coffee = new AmericanoMaker();
+        coffee.makeCoffee();
     }
 
 }
